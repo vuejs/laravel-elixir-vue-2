@@ -14,12 +14,12 @@ npm install laravel-elixir-vue-2 --save-dev
 
 ## Step 2: Gulpfile.js
 
-```
-var elixir = require('laravel-elixir');
+``` js
+var elixir = require('laravel-elixir')
 
-require('laravel-elixir-vue-2');
+require('laravel-elixir-vue-2')
 
 elixir(function(mix) {
-    mix.webpack('main.js'); // resources/assets/js/main.js
-});
+  mix.webpack('app.js'); // resources/assets/js/app.js
+})
 ```
