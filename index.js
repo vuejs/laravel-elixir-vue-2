@@ -6,7 +6,8 @@ Elixir.ready(function () {
     resolve: {
       alias: {
         vue: 'vue/dist/vue.js'
-      }
+      },
+      extensions: ['.js', '.vue']
     },
     // use buble loader since it is the default in Elixir
     vue: {
