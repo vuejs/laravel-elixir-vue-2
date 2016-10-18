@@ -11,7 +11,8 @@ Elixir.ready(function () {
     // use buble loader since it is the default in Elixir
     vue: {
       loaders: {
-        js: 'buble-loader'
+        js: 'buble-loader',
+        scss: 'vue-style!css!sass'
       }
     },
     module: {
