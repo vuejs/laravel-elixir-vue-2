@@ -5,7 +5,7 @@ Elixir.ready(function () {
     // ensure we are using the version of Vue that supports templates
     resolve: {
       alias: {
-        vue: 'vue/dist/vue.js'
+        vue: 'vue/dist/vue.common.js'
       },
       extensions: ['.js', '.vue']
     },
