@@ -17,11 +17,15 @@
     "url": "https://github.com/vuejs/laravel-elixir-vue-2/issues"
   },
   "homepage": "https://github.com/vuejs/laravel-elixir-vue-2#readme",
+  "peerDependencies": {
+    "vue": "^2.1.0"
+  },
   "dependencies": {
-    "css-loader": "^0.23.1",
+    "css-loader": "^0.26.0",
     "file-loader": "^0.9.0",
     "sass-loader": "^4.0.0",
     "url-loader": "^0.5.7",
-    "vue-loader": "^10.0.0"
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.0"
   }
 }

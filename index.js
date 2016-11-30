@@ -9,10 +9,9 @@ Elixir.ready(function () {
       },
       extensions: ['.js', '.vue']
     },
-    // use buble loader since it is the default in Elixir
     vue: {
-      loaders: {
-        js: 'buble-loader'
+      buble: {
+        objectAssign: 'Object.assign'
       }
     },
     module: {

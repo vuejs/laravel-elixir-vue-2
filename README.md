@@ -23,3 +23,27 @@ elixir(function(mix) {
   mix.webpack('app.js'); // resources/assets/js/app.js
 })
 ```
+
+## Extending/Modifying the Default Config
+
+From Elixir's docs:
+
+> If you'd like to leverage more of Webpack's functionality, Elixir will read any webpack.config.js file that is in your project root and factor its configuration into the build process.
+
+For example, to make Vue use `sass-loader` for `<style lang="scss">`:
+
+``` js
+// webpack.config.js
+module.exports = {
+  vue: {
+    loaders: {
+      js: 'buble-loader',
+      scss: 'vue-style-loader!css-loader!sass-loader'
+    }
+  }
+}
+```
+
+## Using Spread Operator
+
+The [Object spread operator](https://github.com/sebmarkbage/ecmascript-rest-spread) requires `Object.assign` to be available. Make sure to [polyfill it](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Polyfill) if you target browsers that don't support it yet.
